@@ -1,12 +1,13 @@
 //
 //  ViewController.m
-//  AZWeakTimer
+//  CommoniOSDemo
 //
-//  Created by JianfengZhu on 2017/8/8.
-//  Copyright © 2017年 JianfengZhu. All rights reserved.
+//  Created by arronzhu on 2017/7/7.
+//  Copyright © 2017年 arronzhu. All rights reserved.
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
 
 @interface ViewController ()
 
@@ -16,14 +17,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor lightGrayColor];
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 50, 25)];
+    [btn setTitle:@"push" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(pushVC:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    btn.center = self.view.center;
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)pushVC:(UIButton *)sender {
+    [self.navigationController pushViewController:[SecondViewController new] animated:YES];
 }
-
 
 @end

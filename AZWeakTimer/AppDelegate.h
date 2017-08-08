@@ -2,8 +2,8 @@
 //  AppDelegate.h
 //  AZWeakTimer
 //
-//  Created by JianfengZhu on 2017/8/8.
-//  Copyright © 2017年 JianfengZhu. All rights reserved.
+//  Created by arronzhu on 2017/8/8.
+//  Copyright © 2017年 arronzhu. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

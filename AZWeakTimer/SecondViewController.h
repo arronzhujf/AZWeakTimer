@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  SecondViewController.h
 //  CommoniOSDemo
 //
-//  Created by arronzhu on 2017/7/7.
+//  Created by arronzhu on 2017/8/1.
 //  Copyright © 2017年 arronzhu. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface SecondViewController : UIViewController
 
 @end
-
